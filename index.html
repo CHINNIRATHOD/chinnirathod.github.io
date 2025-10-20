@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio - Chinnirathod Gandhikumar</title>
   <meta name="description" content="Portfolio of Chinnirathod Gandhikumar Omanna" />
+
+  <!-- Performance & favicon -->
+  <link rel="preload" href="style.css" as="style" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
   <!-- Navigation -->
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
@@ -32,7 +37,7 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation (hidden by default) -->
+    <!-- Mobile Navigation -->
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
       <button data-section="home">Home</button>
       <button data-section="about">About</button>
@@ -45,226 +50,227 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="section hero">
-    <div class="container">
-      <div class="hero-inner" style="text-align:center">
-        <div class="profile-wrap" style="display:flex;justify-content:center;margin-bottom:1rem;">
-          <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
-        </div>
-        <h1>Chinnirathod Gandhikumar Omanna</h1>
-        <p class="sub">
-          Bengaluru, India | 
-          <a href="mailto:gandhikumarrathod@gmail.com">gandhikumarrathod@gmail.com</a> | 9108798347
-        </p>
-        <p class="links">
-          <a href="https://linkedin.com/in/chinnirathod-gandhikumar-347390315" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-          <a href="https://github.com/CHINNIRATHOD" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </p>
-        <p style="margin-top:1rem;">
-          <button class="primary-btn" onclick="scrollToSection('projects')">View My Projects</button>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section" aria-labelledby="about-heading">
-    <div class="container">
-      <h2 id="about-heading">About Me</h2>
-      <p>
-        I'm a motivated and detail-oriented recent graduating student looking for an entry-level job where I can use what I've learned in college.
-        I'm eager to be part of a team, gain real-world experience, and keep learning and growing in a professional environment.
-      </p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section" aria-labelledby="skills-heading">
-    <div class="container">
-      <h2 id="skills-heading">Technical Skills</h2>
-      <div class="max-w-2xl mx-auto">
-        <ul class="skill-list">
-          <li>Languages: C, Java, Python, HTML, CSS, MySQL</li>
-          <li>Frameworks: TensorFlow, Keras</li>
-          <li>Libraries & Tools: NumPy, Pandas, Scikit-learn, Git</li>
-          <li>Databases: MongoDB, MySQL</li>
-          <li>Software: Power BI, Microsoft Office</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section" aria-labelledby="projects-heading">
-    <div class="container">
-      <h2 id="projects-heading">Projects</h2>
-
-      <div class="grid">
-        <!-- Project 1 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="./idcard.webp" alt="ID Card Generator screenshot" />
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+      <div class="container">
+        <div class="hero-inner" style="text-align:center">
+          <div class="profile-wrap" style="display:flex;justify-content:center;margin-bottom:1rem;">
+            <img src="profile.jpg" alt="Portrait of Chinnirathod Gandhikumar Omanna" class="profile-pic" />
           </div>
-          <div class="card-body">
-            <h3>
-              <a href="https://github.com/CHINNIRATHOD/id-card-generater" target="_blank" rel="noopener noreferrer">ID Card Generator (Jan 2024)</a>
-            </h3>
-            <p>Built a full-stack app to generate digital ID cards with photo upload using MongoDB, Node.js, and Multer.</p>
-            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/id-card-generater" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="./cricket_score.webp" alt="Cricket Score Prediction screenshot" />
-          </div>
-          <div class="card-body">
-            <h3>
-              <a href="https://github.com/CHINNIRATHOD/ipl-score-pridiction" target="_blank" rel="noopener noreferrer">Cricket Score Prediction (Jun 2024)</a>
-            </h3>
-            <p>Used regression techniques to forecast cricket scores based on match data.</p>
-            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/ipl-score-pridiction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-        </article>
-
-        <!-- Project 3 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="./Stock-Market-Predictions.jpg" alt="Stock Price Prediction screenshot" />
-          </div>
-          <div class="card-body">
-            <h3>
-              <a href="https://github.com/CHINNIRATHOD/stock-price-predictor" target="_blank" rel="noopener noreferrer">Stock Price Prediction (May 2025)</a>
-            </h3>
-            <p>Developed an LSTM-based model using Python and Streamlit to predict stock closing prices.</p>
-            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/stock-price-predictor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-        </article>
-
-        <!-- Project 4 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="./daterecurrencepicker-dialog-daily.png" alt="Recurring Date Picker screenshot" />
-          </div>
-          <div class="card-body">
-            <h3>
-              <a href="https://github.com/CHINNIRATHOD/recurring-date-picker" target="_blank" rel="noopener noreferrer">Recurring Date Picker (Jul 2025)</a>
-            </h3>
-            <p>Built a modular, production-ready recurring date picker component using React (Next.js), Tailwind CSS, and Zustand.</p>
-            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/recurring-date-picker" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-        </article>
-
-        <!-- Project 5 -->
-        <article class="card">
-          <div class="card-media">
-            <img src="./login&signup.png" alt="Login & Signup screenshot" />
-          </div>
-          <div class="card-body">
-            <h3>
-              <a href="https://github.com/CHINNIRATHOD/login-register" target="_blank" rel="noopener noreferrer">Login & Signup System (Jul 2025)</a>
-            </h3>
-            <p>Developed a responsive login and registration system using PHP, MySQL, and Bootstrap.</p>
-            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/login-register" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="section" aria-labelledby="experience-heading">
-    <div class="container">
-      <h2 id="experience-heading">Internship</h2>
-
-      <div class="card card-large">
-        <div class="card-body">
-          <h3>Web Development Intern – Main Flow Services and Technologies Pvt. Ltd. (July 2025 – August 2025)</h3>
-          <p>
-            Worked on building responsive and user-friendly web applications using HTML, CSS, JavaScript, and React.
-            Contributed to both frontend and backend development with Node.js and MongoDB.
+          <h1>Chinnirathod Gandhikumar Omanna</h1>
+          <p class="sub">
+            Bengaluru, India | 
+            <a href="mailto:gandhikumarrathod@gmail.com">gandhikumarrathod@gmail.com</a> | 9108798347
+          </p>
+          <p class="links">
+            <a href="https://linkedin.com/in/chinnirathod-gandhikumar-347390315" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://github.com/CHINNIRATHOD" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </p>
+          <p style="margin-top:1rem;">
+            <button class="primary-btn" onclick="scrollToSection('projects')">View My Projects</button>
           </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education Section -->
-  <section id="education" class="section" aria-labelledby="education-heading">
-    <div class="container">
-      <h2 id="education-heading">Education</h2>
+    <!-- About Section -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+        <p>
+          I'm a motivated and detail-oriented recent graduating student looking for an entry-level job where I can use what I've learned in college.
+          I'm eager to be part of a team, gain real-world experience, and keep learning and growing in a professional environment.
+        </p>
+      </div>
+    </section>
 
-      <ul class="edu-list">
-        <li class="card">Dayananda Sagar University – CGPA: 7.59 (2026)</li>
-        <li class="card">Sarvajna PU College of Science – 84.67% (2022)</li>
-        <li class="card">Shree Siddhivinayak High Primary School – 65.88% (2020)</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">Technical Skills</h2>
+        <ul class="skill-list">
+          <li><b>Languages</b>: C, Java, Python, HTML, CSS, MySQL</li>
+          <li><b>Frameworks</b>: Node.js, Express.js, Bootstrap, TensorFlow, Keras, Scikit-learn, Pandas, NumPy</li>
+          <li><b>Libraries & Tools</b>: NumPy, Pandas, Scikit-learn, Git</li>
+          <li><b>Databases</b>: MongoDB, MySQL</li>
+          <li><b>Software</b>: Power BI, Microsoft Office</li>
+          <li><b>Concepts</b>: Data Structures & Algorithms, OOPs, REST APIs, SDLC, Cloud (AWS Basics)</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- Certifications Section -->
-  <section id="certifications" class="section" aria-labelledby="certifications-heading">
-    <div class="container">
-      <h2 id="certifications-heading">Certifications</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Projects</h2>
 
-      <ul class="cert-list">
-        <li class="card">
-          <a href="https://drive.google.com/file/d/1sp2GLGAEmH5yOkNU9bV0R_VMLrgN_qO1/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Power BI for Business Professionals – Infosys Springboard
-          </a>
-        </li>
-        <li class="card">
-          <a href="https://drive.google.com/file/d/1spaSgltiNYLhmlDpRVd5VBubm6HOXu7S/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Learning Microsoft Power BI – Infosys Springboard
-          </a>
-        </li>
-        <li class="card">
-          <a href="https://drive.google.com/file/d/1ULIbE0P_LNghjRCEX8xpMdcrvgUb9Ag9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Tata Data Visualisation Job Simulation – Forage
-          </a>
-        </li>
-        <li class="card">
-          <a href="https://drive.google.com/file/d/1TEi5UCt_K_gr4AMVKRXetmhnyhFGy8Ja/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Application & Use Cases – Rapidminer
-          </a>
-        </li>
-        <li class="card">
-          <a href="https://drive.google.com/file/d/1HjjurmCVyzOZBGCkrwakVHXog39Dg27W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            NASA SPACE APP Challenge - NASA
-          </a>
-        </li>
-        <li class="card">
-          <a href="https://drive.google.com/file/d/1JxQMDFkPEswkAfy21JGoO6I0nOZMmNWy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Intern at Main Flow Services and Technologies Pvt. Ltd.
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+        <div class="grid">
+          <!-- Project 1 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="./idcard.webp" alt="ID Card Generator App Screenshot" />
+            </div>
+            <div class="card-body">
+              <h3>
+                <a href="https://github.com/CHINNIRATHOD/id-card-generater" target="_blank" rel="noopener noreferrer">
+                  ID Card Generator (Jan 2024)
+                </a>
+              </h3>
+              <p>Built a full-stack app to generate digital ID cards with photo upload using MongoDB, Node.js, and Multer.</p>
+              <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/id-card-generater" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
 
-  <!-- Hobbies Section -->
-  <section id="hobbies" class="section" aria-labelledby="hobbies-heading">
-    <div class="container">
-      <h2 id="hobbies-heading">Hobbies</h2>
-      <p>Playing video games, listening to music — known for a positive and optimistic personality.</p>
-    </div>
-  </section>
+          <!-- Project 2 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="./cricket_score.webp" alt="Cricket Score Prediction App Screenshot" />
+            </div>
+            <div class="card-body">
+              <h3>
+                <a href="https://github.com/CHINNIRATHOD/ipl-score-pridiction" target="_blank" rel="noopener noreferrer">
+                  Cricket Score Prediction (Jun 2024)
+                </a>
+              </h3>
+              <p>Used regression techniques to forecast cricket scores based on match data.</p>
+              <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/ipl-score-pridiction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
 
-  <!-- Footer (optional) -->
+          <!-- Project 3 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="./Stock-Market-Predictions.jpg" alt="Stock Price Prediction Project Screenshot" />
+            </div>
+            <div class="card-body">
+              <h3>
+                <a href="https://github.com/CHINNIRATHOD/stock-price-predictor" target="_blank" rel="noopener noreferrer">
+                  Stock Price Prediction (May 2025)
+                </a>
+              </h3>
+              <p>Developed an LSTM-based model using Python and Streamlit to predict stock closing prices.</p>
+              <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/stock-price-predictor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="./daterecurrencepicker-dialog-daily.png" alt="Recurring Date Picker Component Screenshot" />
+            </div>
+            <div class="card-body">
+              <h3>
+                <a href="https://github.com/CHINNIRATHOD/recurring-date-picker" target="_blank" rel="noopener noreferrer">
+                  Recurring Date Picker (Jul 2025)
+                </a>
+              </h3>
+              <p>Built a modular recurring date picker component using React (Next.js), Tailwind CSS, and Zustand.</p>
+              <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/recurring-date-picker" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="card">
+            <div class="card-media">
+              <img src="./login&signup.png" alt="Login & Signup System Screenshot" />
+            </div>
+            <div class="card-body">
+              <h3>
+                <a href="https://github.com/CHINNIRATHOD/login-register" target="_blank" rel="noopener noreferrer">
+                  Login & Signup System (Jul 2025)
+                </a>
+              </h3>
+              <p>Developed a responsive login and registration system using PHP, MySQL, and Bootstrap.</p>
+              <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/login-register" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" aria-labelledby="experience-heading">
+      <div class="container">
+        <h2 id="experience-heading">Internship Experience</h2>
+
+        <div class="card card-large">
+          <div class="card-body">
+            <h3>Web Development Intern – Main Flow Services and Technologies Pvt. Ltd. (Jul 2025 – Aug 2025)</h3>
+            <p>
+              Built responsive and user-friendly web applications using HTML, CSS, JavaScript, and React.
+              Contributed to both frontend and backend development with Node.js and MongoDB.
+            </p>
+            <a href="https://drive.google.com/file/d/1JxQMDFkPEswkAfy21JGoO6I0nOZMmNWy/view?usp=sharing" target="_blank" rel="noopener noreferrer">Offer Letter</a> |
+            <a href="https://drive.google.com/file/d/1yu6Btx0wLlbt-nlDiMM_yMeSTCJubpfE/view?usp=sharing" target="_blank" rel="noopener noreferrer">Completion Certificate</a>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="card card-large">
+          <div class="card-body">
+            <h3>Frontend Development Intern – IBM SkillBuild (Aug 2025 – Oct 2025)</h3>
+            <p>
+              Worked on building responsive and user-friendly web applications using HTML, CSS, JavaScript, and React.
+              Contributed to both frontend and backend development with Node.js and MongoDB.
+            </p>
+            <a href="https://drive.google.com/file/d/1xp3V-s_b2E51Rm-6gKf8Y1BRKJQUM5oH/view?usp=sharing" target="_blank" rel="noopener noreferrer">Offer Letter</a> |
+            <a href="https://drive.google.com/file/d/1bijbBwSL-_FYef1_1dOwzs_E-OQJY8f5/view?usp=sharing" target="_blank" rel="noopener noreferrer">Completion Certificate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading">Education</h2>
+        <ul class="edu-list">
+          <li class="card">Dayananda Sagar University – CGPA: 7.59 (2026)</li>
+          <li class="card">Sarvajna PU College of Science – 84.67% (2022)</li>
+          <li class="card">Shree Siddhivinayak High Primary School – 65.88% (2020)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section" aria-labelledby="certifications-heading">
+      <div class="container">
+        <h2 id="certifications-heading">Certifications</h2>
+        <ul class="cert-list">
+          <li class="card"><a href="https://drive.google.com/file/d/1sp2GLGAEmH5yOkNU9bV0R_VMLrgN_qO1/view?usp=sharing" target="_blank" rel="noopener noreferrer">Power BI for Business Professionals – Infosys Springboard</a></li>
+          <li class="card"><a href="https://drive.google.com/file/d/1spaSgltiNYLhmlDpRVd5VBubm6HOXu7S/view?usp=sharing" target="_blank" rel="noopener noreferrer">Learning Microsoft Power BI – Infosys Springboard</a></li>
+          <li class="card"><a href="https://drive.google.com/file/d/1ULIbE0P_LNghjRCEX8xpMdcrvgUb9Ag9/view?usp=sharing" target="_blank" rel="noopener noreferrer">Tata Data Visualisation Job Simulation – Forage</a></li>
+          <li class="card"><a href="https://drive.google.com/file/d/1TEi5UCt_K_gr4AMVKRXetmhnyhFGy8Ja/view?usp=sharing" target="_blank" rel="noopener noreferrer">Application & Use Cases – Rapidminer</a></li>
+          <li class="card"><a href="https://drive.google.com/file/d/1HjjurmCVyzOZBGCkrwakVHXog39Dg27W/view?usp=sharing" target="_blank" rel="noopener noreferrer">NASA SPACE APP Challenge - NASA</a></li>
+          <li class="card"><a href="https://drive.google.com/file/d/1JxQMDFkPEswkAfy21JGoO6I0nOZMmNWy/view?usp=sharing" target="_blank" rel="noopener noreferrer">Internship – Main Flow Services and Technologies Pvt. Ltd.</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section" aria-labelledby="hobbies-heading">
+      <div class="container">
+        <h2 id="hobbies-heading">Hobbies</h2>
+        <p>Playing video games, listening to music — known for a positive and optimistic personality.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer class="section" aria-label="Footer">
     <div class="container" style="text-align:center;">
       <p>&copy; <span id="year"></span> Chinnirathod Gandhikumar Omanna</p>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script>
     // Set current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
   <script src="script.js"></script>
 </body>
 </html>
-
